@@ -9,7 +9,7 @@ Build a clean and scalable GraphQL API that supports:
 - Schema-first design
 - Queries and mutations
 - Input validation with Pydantic
-- DataLoader for optimization
+- DataLoader for optimisation
 - GraphQL Playground for testing
 
 ---
@@ -32,11 +32,15 @@ Build a clean and scalable GraphQL API that supports:
 
 ### 📦 Installation
 
-`git clone https://github.com/conradgabe/graphql-api-1791.git`
-`cd graphql-api-1791`
-`python -m venv venv`
+```git clone https://github.com/conradgabe/graphql-api-1791.git```
+
+```cd graphql-api-1791```
+
+```python -m venv venv```
+
 ```source venv/bin/activate  # or `venv\Scripts\activate` on Windows```
-`pip install -r requirements.txt`
+
+```pip install -r requirements.txt```
 
 ### ⚙️ Configuration
 ``` DATABASE_URL=sqlite:///./test.db ```
@@ -52,7 +56,7 @@ Build a clean and scalable GraphQL API that supports:
 
 `http://127.0.0.1:8000/graphql`
 
-###📄 Example Query
+### 📄 Example Query
 ```
 query GetAllPosts {
   posts {
