@@ -95,6 +95,7 @@ graphql-api-project/
 │   ├── init_db.py               # DB seeding script
 │   ├── loaders.py               # Dataloader pattern
 │   ├── types/                   # Strawberry types
+|   ├── tests/                  # Tests for Endpoint
 │   └── resolvers/              # Query and mutation logic
 ├── examples/                   # Playground queries/mutations
 ├── requirements.txt
