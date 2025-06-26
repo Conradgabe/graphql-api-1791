@@ -1,5 +1,5 @@
 import strawberry
-from app.resolvers.user_resolvers import QueryUser
+from app.resolvers.user_resolvers import QueryUser, MutationUser
 from app.resolvers.post_resolvers import QueryPost, MutationPost
 
 @strawberry.type
@@ -8,7 +8,7 @@ class Query(QueryUser, QueryPost):
     pass
 
 @strawberry.type
-class Mutation(MutationPost):
+class Mutation(MutationPost, MutationUser):
     """Root mutation type that combines post mutations."""
     pass
 
