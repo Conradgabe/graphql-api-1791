@@ -1,0 +1,34 @@
+mutation {
+  createPost(title: "GraphQL Rocks", content: "Really loving this", authorId: 1) {
+    id
+    title
+    author {
+      name
+    }
+  }
+}
+
+mutation {
+  createUser(name: "Jane Doe", email: "Doe@example.com") {
+    id
+    name
+    email
+  }
+}
+
+mutation {
+  updatePost(id: 1, title: "GraphQL is Awesome", content: "Updated content") {
+    id
+    title
+    content
+    author {
+      id
+      name
+      email
+    }
+  }
+}
+
+mutation {
+  deletePost(post_id: 1)
+}
