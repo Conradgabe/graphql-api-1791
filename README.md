@@ -85,7 +85,7 @@ mutation CreatePost {
 More examples are in examples/queries.graphql and examples/mutations.graphql.
 
 ### 🧱 Project Structure
-
+```
 graphql-api-project/
 ├── app/
 │   ├── main.py                  # FastAPI app entry
@@ -100,6 +100,7 @@ graphql-api-project/
 ├── requirements.txt
 ├── .env
 └── README.md
+```
 
 ### ✅ Features
 - 📐 Well-defined schema using Strawberry GraphQL
