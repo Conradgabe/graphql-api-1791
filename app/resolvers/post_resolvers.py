@@ -12,6 +12,7 @@ class QueryPost:
     def posts(self) -> List[PostType]:
         """
         Resolver for fetching all posts.
+        This interacts with the database to retrieve all posts data.
         """
         db: Session = next(get_db())
         posts = db.query(Post).all()
@@ -29,6 +30,7 @@ class QueryPost:
     def post(self, post_id: int) -> PostType:
         """
         Resolver for fetching a single post by ID.
+        This interacts with the database to retrieve posts data.
         """
         db: Session = next(get_db())
         post = db.query(Post).filter(Post.id == post_id).first()
@@ -47,6 +49,10 @@ class QueryPost:
 class MutationPost:
     @strawberry.mutation
     def create_post(self, title: str, content: str, author_id: int) -> PostType:
+        """
+        Resolver for Creating a post
+        This interacts with the database to create posts data.
+        """
         db: Session = next(get_db())
         author = db.query(User).filter(User.id == author_id).first()
         if not author:
@@ -65,6 +71,10 @@ class MutationPost:
     
     @strawberry.mutation
     def update_post(self, post_id: int, title: str = None, content: str = None) -> PostType:
+        """
+        Resolver for Updating a post
+        This interacts with the database to update posts data.
+        """
         db: Session = next(get_db())
         post = db.query(Post).filter(Post.id == post_id).first()
         if not post:
@@ -87,6 +97,10 @@ class MutationPost:
     
     @strawberry.mutation
     def delete_post(self, post_id: int) -> bool:
+        """
+        Resolver for deleting a post
+        This interacts with the database to delete posts data.
+        """
         db: Session = next(get_db())
         post = db.query(Post).filter(Post.id == post_id).first()
         if not post:
