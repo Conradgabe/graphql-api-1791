@@ -9,7 +9,7 @@ Build a clean and scalable GraphQL API that supports:
 - Schema-first design
 - Queries and mutations
 - Input validation with Pydantic
-- DataLoader for optimization
+- DataLoader for optimisation
 - GraphQL Playground for testing
 
 ---
@@ -32,11 +32,15 @@ Build a clean and scalable GraphQL API that supports:
 
 ### 📦 Installation
 
-`git clone https://github.com/conradgabe/graphql-api-1791.git`
-`cd graphql-api-1791`
-`python -m venv venv`
+```git clone https://github.com/conradgabe/graphql-api-1791.git```
+
+```cd graphql-api-1791```
+
+```python -m venv venv```
+
 ```source venv/bin/activate  # or `venv\Scripts\activate` on Windows```
-`pip install -r requirements.txt`
+
+```pip install -r requirements.txt```
 
 ### ⚙️ Configuration
 ``` DATABASE_URL=sqlite:///./test.db ```
@@ -52,7 +56,7 @@ Build a clean and scalable GraphQL API that supports:
 
 `http://127.0.0.1:8000/graphql`
 
-###📄 Example Query
+### 📄 Example Query
 ```
 query GetAllPosts {
   posts {
@@ -78,10 +82,10 @@ mutation CreatePost {
   }
 }
 ```
-More examples are in examples/queries.graphql and examples/mutations.graphql.
+## More examples are in examples/queries.graphql and examples/mutations.graphql.
 
 ### 🧱 Project Structure
-
+```
 graphql-api-project/
 ├── app/
 │   ├── main.py                  # FastAPI app entry
@@ -91,11 +95,13 @@ graphql-api-project/
 │   ├── init_db.py               # DB seeding script
 │   ├── loaders.py               # Dataloader pattern
 │   ├── types/                   # Strawberry types
+|   ├── tests/                  # Tests for Endpoint
 │   └── resolvers/              # Query and mutation logic
 ├── examples/                   # Playground queries/mutations
 ├── requirements.txt
 ├── .env
 └── README.md
+```
 
 ### ✅ Features
 - 📐 Well-defined schema using Strawberry GraphQL
@@ -106,7 +112,7 @@ graphql-api-project/
 - 📘 Clear documentation & examples
 
 ### 📤Submission
-GitHub Repository: https://github:com/conradgabe/graphql-api-1791
+GitHub Repository: [https://www.github:com/conradgabe/graphql-api-1791](https://github.com/Conradgabe/graphql-api-1791)
 
 ### 📩 Contact
 For inquiries or technical questions, feel free to reach out via the repo issues or gisuekebho5880@gmail.com.
