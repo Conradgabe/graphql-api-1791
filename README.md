@@ -82,7 +82,7 @@ mutation CreatePost {
   }
 }
 ```
-More examples are in examples/queries.graphql and examples/mutations.graphql.
+## More examples are in examples/queries.graphql and examples/mutations.graphql.
 
 ### 🧱 Project Structure
 ```
@@ -112,7 +112,7 @@ graphql-api-project/
 - 📘 Clear documentation & examples
 
 ### 📤Submission
-GitHub Repository: https://github:com/conradgabe/graphql-api-1791
+GitHub Repository: [https://www.github:com/conradgabe/graphql-api-1791](https://github.com/Conradgabe/graphql-api-1791)
 
 ### 📩 Contact
 For inquiries or technical questions, feel free to reach out via the repo issues or gisuekebho5880@gmail.com.
